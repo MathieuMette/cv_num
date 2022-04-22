@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body { 
+    font-family:'Filmotype Austin' ;
+}
+
+/* Nav Bar */
+.mm-navbar {
+    background-color: #fca311;
+}
+.nav-link { 
+    color: #14213D !important;
+    font-size: 2rem;
+}
+.navbar-brand { 
+    color: #14213D !important;
+    text-shadow: 0.1rem 0.1rem #fff !important;
+    font-size: 2rem;
+}
+.navbar-toggler { 
+    color: #fca311 !important;
+    border-color: #fca311 !important;
+}
+.nav-item {
+    display: flex;
+    align-items: center !important;
+}
+.mm-navAutres { 
+    width: 100%;
+}
+
+/* Bouton retour haut */
+.mm-boutonHaut a { 
+    color: #fca311;
+    background-color: #14213D;
+    border-radius: 48%;
+    opacity: 0.8;
+}
+.mm-boutonHaut :hover { 
+    opacity: 1;
+    color: #fff !important;
+}
+
+/* Section acceuil */
+#accueil {
+    margin-top: 17vh;
+    scroll-margin-top: 10rem;
+    background-color: #ffffff;
+}
+.mm-titreAccueil {
+    color: #14213D;
+    font-size: 7rem  !important;
+    text-shadow: 0.5rem 0.5rem #fca311;
+}
+.mm-posteAccueil { 
+    color: #14213D;
+    font-size: 3.5rem;
+    font-family: 'Comic Neue';
+}
+.imgAccueil {
+    top: 5em;
+    -webkit-filter: drop-shadow(2rem 2rem #fca311);
+    filter: drop-shadow(0.7rem 0.3rem #fca311);
+    max-height: 60vh;
+    z-index: 1;
+}
+.socialMedia a{
+    text-decoration: none
+}
+    /* Animation */
+    .icon { 
+        display: inline-block;
+        font-size: 45px;
+        animation: float 5s ease-in-out infinite;
+    }
+    .mm-instagram {
+        animation-delay: 0.5s;
+    }
+    .mm-linkedin {
+        animation-delay: 1s;
+    }
+    .mm-whatsapp {
+        animation-delay: 1.5s;
+    }
+    .mm-gmail {
+        animation-delay: 2s;
+    }
+    .mm-cvPdf {
+        animation-delay: 2.5s;
+    }
+    @keyframes float {
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-15px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+/* Bouton en savoir plus */
+.button-aboutMe {
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fca311;
+    outline: 2px solid #fca311;
+    border-radius: 20%;
+    padding: 1rem 2rem;
+    position: absolute;
+    overflow: hidden;
+    transition: color 1s;
+    z-index: 1;
+    left: 380px;
+}
+.button-aboutMe:hover{
+    color: #ffffff;
+}
+.button-aboutMe::before { 
+    content: '';
+    top: 0;
+    position: absolute;
+    left: -1rem;
+    width: 0;
+    height: 100%;
+    background-color: #fca311;
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: width 1s;
+}
+.button-aboutMe:hover::before {
+    width: 120%;
+}
+
+/* Section Profil */
+#profil {
+    background-color: #14213D;
+    color: #fff;
+    scroll-margin-top: 5rem;
+}
+.mm-titreProfil {
+    font-size: 5rem;
+    margin-left: 5%;
+}
+.mm-textProfil {
+    font-family: 'Comic Neue';
+    font-size: 1.4rem;
+    padding: 6rem;
+}
+.imgProfil {
+    -webkit-filter: drop-shadow(2rem 2rem #fca311);
+    filter: drop-shadow(0.4rem 0.2rem #ffffff);
+    max-height: 70vh;
+}
+
+/* Section Formations */
+#formations {
+    background-color: #E5E5E5;
+    color:#14213D;
+    scroll-margin-top: 5rem;
+    height: 100vh;
+}
+.mm-titreFormations { 
+    font-size: 5rem;
+    margin-right: 10%;
+    margin-bottom: 4rem;
+}
+.missions{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-family: 'Comic Neue';
+}
+.colormission{
+    color: #fff;
+    font-family: 'Comic Neue';
+    font-size: 1.5rem;
+}
+.titlemission{
+    font-weight: bolder;
+    font-size: 1.8rem;
+    color: #fff;
+}
+.carousel-item{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.yearFormation { 
+    color: #14213D;
+    font-size: 1.8rem;
+}
+.formcarou{
+    width: 100%;
+    height: 300px;
+    background-color: #fca311;
+    border-radius: 25px;
+    padding-top: 6%;
+}
+.carousel-item .active{
+    padding: 0 !important;
+}
+.carousel-control-prev, .carousel-control-next {
+    color: #14213D !important;
+}
+
+/* Compétences */
+#competences { 
+    background-color: #fff;
+    color:#14213D;
+    scroll-margin-top: 5rem;
+    height: 100vh;
+}
+.titreLogiciels { 
+    font-family: 'Comic Neue';
+    font-size : 1.8rem;
+}
+.titreCompetences {
+    font-size: 5rem;
+}
+.compLogo {
+    max-width: 80px;
+    max-height: 80px;
+}
+.logo {
+    transition: .2s;
+}
+.js { 
+    border-radius: 10px;
+}
+.logo:hover { 
+    transform: translate(-15px, -5px) rotate(-15deg) skew(-10deg);
+}
+.graphique {
+    display: flex;
+    flex-direction: column;
+}
+.bloc2 { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+}
+
+/* Experiences */
+#experiences {
+    min-height: 100vh;
+    background: #14213D;
+    scroll-margin-top: 4rem;
+    color:#ffffff;
+}
+.titreExperiences { 
+    font-size: 5rem;
+    padding-top : 2rem;
+}
+#blocExperiences {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comic Neue';
+    position: relative;
+    margin: -100px;
+}
+#blocExperiences::before {
+    content: "";
+    background: #393e46;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    top: 0;
+}
+#experiences .card {
+    position: relative;
+}
+#experiences .card .cover {
+    width: 300px;
+    height: 300px;
+    transition: 0.5s;
+}
+#experiences .card .cover.closed {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(200px);
+}
+#experiences .card:hover .cover.closed {
+    transform: translateY(0);
+}
+#experiences .card .cover.closed .card_content {
+    opacity: 0.8;
+    transition: 0.8s;
+    text-align: center;
+}
+#experiences .card:hover .cover.closed .card_content {
+    opacity: 1;
+}
+#experiences .card .cover.closed .card_content img {
+    padding: 3em;
+}
+#experiences .card .cover.closed h3 {
+    margin: 10px 0 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+#experiences .card .cover.open {
+    background-color: #fff;
+    height: 300px;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+.card_text {
+    text-align: center;
+    display: inline-block;
+    margin-top: 12px;
+    font-family: 'Comic Neue';
+}
+.card_text .title {
+    color: #14213D;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.card_text .text_container {
+    margin-top: 6px;
+    max-height: 200px;
+    height: fit-content;
+    overflow-y: auto;
+    padding: 4px;
+}
+.card_text .text_container p {
+    color: #393e46;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+#experiences .card:hover .cover.open {
+    transform: translateY(0);
+}
+.card_button {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #fca311;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+    transition: 100ms linear;
+}
+.card_button a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.card_button:hover {
+    background: #5c6577;
+    transition: 100ms linear;
+}
+/* Naval Group */
+.navalgroup {
+    background: #ffffff;
+}
+#experiences .card:hover .cover.closed.navalgroup {
+    transform: rotate(3deg);
+}
+/* Elegance Marine */
+.eleganceMarine {
+    background: #00335F;
+}
+#experiences .card:hover .cover.closed.eleganceMarine {
+    transform: rotate(-2deg);
+}
+/* Café Maurice */
+.cafeMaurice { 
+    background: #fff;
+}
+#experiences .card:hover .cover.closed.cafeMaurice {
+    transform: rotate(-2deg);
+}
+/* Rotary */
+.rotaryInternational { 
+    background: #fff;
+}
+#experiences .card:hover .cover.closed.rotaryInternational {
+    transform: rotate(3deg);
+}
+.card{
+    background:none !important;
+    border:none !important;
+    margin: 2rem;
+}
+
+
+/* Test */
+.history-tl-container {
+    width: 80%;
+    margin: auto;
+    display: block;
+    position: relative;
+    margin-right: 10%;
+}
+.history-tl-container ul.tl {
+    display: inline-block;
+}
+
+.history-tl-container ul.tl li {
+    list-style: none;
+    border-left: 0.5rem solid #fca311;
+    padding: 0 1rem 2rem 2rem;
+    position: relative;
+}
+
+.history-tl-container ul.tl li::before {
+    position: absolute;
+    left: -0.9rem;
+    top: 0.2rem;
+    content: " ";
+    border: 1rem solid #14213D;
+    border-radius: 500%;
+    background: #258cc7;
+    height: 1em;
+    width: 1em;
+    transition: all 500ms ease-in-out;
+}
+.history-tl-container ul.tl li:hover::before {
+    border-color: #258cc7;
+    transition: all 1000ms ease-in-out;
+}
+ul.tl li .item-title {
+    font-size: 2rem;
+}
+ul.tl li .item-detail {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+}
+ul.tl li .timestamp {
+    color: #8d8d8d;
+    position: absolute;
+    width: 20%;
+    left: -35%;
+    text-align: right;
+    font-size: 3rem;
+}
