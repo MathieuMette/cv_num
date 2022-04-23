@@ -215,27 +215,34 @@ body {
     background-color: #fff;
     color:#14213D;
     scroll-margin-top: 5rem;
-    height: 100vh;
+    height: 90vh;
 }
 .titreLogiciels { 
     font-family: 'Comic Neue';
-    font-size : 1.8rem;
+    font-size : 1.6rem;
 }
 .titreCompetences {
     font-size: 5rem;
 }
 .compLogo {
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 65px;
+    max-height: 65px;
 }
-.logo {
+.logo, .logo2, .logo3 {
     transition: .2s;
+    margin: 0.4rem;
 }
 .js { 
     border-radius: 10px;
 }
 .logo:hover { 
     transform: translate(-15px, -5px) rotate(-15deg) skew(-10deg);
+}
+.logo2:hover { 
+    transform: translate(-5px, 15px) rotate(-20deg) skew(-10deg);
+}
+.logo3:hover { 
+    transform: translate(5px, 15px) rotate(30deg) skew(10deg);
 }
 .graphique {
     display: flex;
@@ -247,6 +254,44 @@ body {
     align-items: center;
     margin-top: 25px;
 }
+/* Animation Rainbow */
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+.rainbow {
+	position: relative;
+	z-index: 0;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 2rem;
+}
+.rainbow::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#14213D, #1f376b, #fff), linear-gradient(#fff, #fff), linear-gradient(#fff, #fca311), linear-gradient(#fff, #fff);
+    animation: rotate 4s linear infinite;
+}
+.rainbow::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 6px;
+		top: 6px;
+		width: calc(100% - 12px);
+		height: calc(100% - 12px);
+		background: white;
+		border-radius: 5px;
+	}
 
 /* Experiences */
 #experiences {
@@ -297,6 +342,8 @@ body {
 }
 #experiences .card:hover .cover.closed {
     transform: translateY(0);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+
 }
 #experiences .card .cover.closed .card_content {
     opacity: 0.8;
@@ -409,54 +456,43 @@ body {
     margin: 2rem;
 }
 
-
-/* Test */
-.history-tl-container {
-    width: 80%;
-    margin: auto;
-    display: block;
-    position: relative;
-    margin-right: 10%;
+/* Contact */
+#mm-contact {
+    min-height: 100vh;
+    background-color: #fca311;
+    scroll-margin-top: 2rem;
+    color:#14213D;
 }
-.history-tl-container ul.tl {
-    display: inline-block;
+.titreContact { 
+    font-size: 5rem;
+    padding-top : 2rem;
+    text-align: center;
 }
-
-.history-tl-container ul.tl li {
-    list-style: none;
-    border-left: 0.5rem solid #fca311;
-    padding: 0 1rem 2rem 2rem;
-    position: relative;
+.socialMediaContact { 
+    margin: 0 20% 0 20%;
+    display: flex;
+    justify-content: space-between;
 }
-
-.history-tl-container ul.tl li::before {
-    position: absolute;
-    left: -0.9rem;
-    top: 0.2rem;
-    content: " ";
-    border: 1rem solid #14213D;
-    border-radius: 500%;
-    background: #258cc7;
-    height: 1em;
-    width: 1em;
-    transition: all 500ms ease-in-out;
+.iconCon{
+    width: 50px;
+    height: 50px;
 }
-.history-tl-container ul.tl li:hover::before {
-    border-color: #258cc7;
-    transition: all 1000ms ease-in-out;
+.iconContact { 
+    text-decoration: none;
+    padding: 5px;
+    background-color: #fca311;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #a16608, -5px -5px 10px #fca311;
 }
-ul.tl li .item-title {
-    font-size: 2rem;
+.iconContact:focus { 
+    animation: shadow .15s ease-in-out;
 }
-ul.tl li .item-detail {
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 1rem;
-}
-ul.tl li .timestamp {
-    color: #8d8d8d;
-    position: absolute;
-    width: 20%;
-    left: -35%;
-    text-align: right;
-    font-size: 3rem;
+@keyframes shadow {
+    0% {
+        box-shadow: 
+        inset 5px 5px 10px #a16608, inset 5px -5px 10px #fca311;
+    }
+    100% {
+        box-shadow: none;
+    }
 }
