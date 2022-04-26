@@ -74,6 +74,7 @@ body {
         display: inline-block;
         font-size: 45px;
         animation: float 5s ease-in-out infinite;
+        color: #fca311;
     }
     .mm-instagram {
         animation-delay: 0.5s;
@@ -101,6 +102,9 @@ body {
             transform: translateY(0);
         }
     }
+    .icon:hover {
+        color :#14213D;
+    }
 /* Bouton en savoir plus */
 .button-aboutMe {
     text-decoration: none;
@@ -108,31 +112,13 @@ body {
     text-transform: uppercase;
     color: #fca311;
     outline: 2px solid #fca311;
-    border-radius: 20%;
+    border-radius: 5%;
     padding: 1rem 2rem;
-    position: absolute;
-    overflow: hidden;
-    transition: color 1s;
-    z-index: 1;
-    left: 380px;
 }
-.button-aboutMe:hover{
+.button-aboutMe:hover { 
+    background-color :#fca311;
     color: #ffffff;
-}
-.button-aboutMe::before { 
-    content: '';
-    top: 0;
-    position: absolute;
-    left: -1rem;
-    width: 0;
-    height: 100%;
-    background-color: #fca311;
-    transform: skewX(35deg);
-    z-index: -1;
-    transition: width 1s;
-}
-.button-aboutMe:hover::before {
-    width: 120%;
+    font-weight: bold;
 }
 
 /* Section Profil */
