@@ -247,12 +247,12 @@ body {
 }
 .logo, .logo2, .logo3 {
     transition: .2s;
-    margin: 0.4rem;
+    margin: 0.2rem;
 }
 .js { 
     border-radius: 10px;
 }
-.logo:hover { 
+/* .logo:hover { 
     transform: translate(-15px, -5px) rotate(-15deg) skew(-10deg);
 }
 .logo2:hover { 
@@ -260,7 +260,7 @@ body {
 }
 .logo3:hover { 
     transform: translate(5px, 15px) rotate(30deg) skew(10deg);
-}
+} */
 .graphique {
     display: flex;
     flex-direction: column;
@@ -271,6 +271,40 @@ body {
     align-items: center;
     margin-top: 25px;
 }
+/* PS */
+#progressPs>.progress-bar {
+    background-color: #2DAAFF !important;
+}
+/* AI */
+#progressAi>.progress-bar {
+    background-color: #F19000 !important;
+}
+/* ID */
+#progressId>.progress-bar {
+    background-color: #FF3066 !important;
+}
+/* XD */
+#progressXd>.progress-bar {
+    background-color: #FF61F6 !important;
+}
+/* AE */
+#progressAe>.progress-bar {
+    background-color: #9A9AFF !important;
+}
+/* PR */
+#progressPr>.progress-bar {
+    background-color: #9A9AFF !important;
+}
+
+/* All */
+.progress { 
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.progress:hover { 
+    opacity: 1;
+}
+
 /* Animation Rainbow */
 @keyframes rotate {
 	100% {
