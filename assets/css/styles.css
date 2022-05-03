@@ -3,10 +3,6 @@
     padding: 0;
     scroll-behavior: smooth;
 }
-@font-face {
-    font-family: Filmotype Austin;
-    src: url("assets/fonts/Filmotype Austin.otf");
-}
 
 
 ::-webkit-scrollbar {
@@ -239,7 +235,7 @@ body {
     background-color: #fff;
     color:#14213D;
     scroll-margin-top: 5rem;
-    height: 90vh;
+    height: 90vh auto;
 }
 .titreLogiciels { 
     font-family: 'Comic Neue';
