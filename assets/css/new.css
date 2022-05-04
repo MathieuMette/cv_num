@@ -141,55 +141,136 @@ body {
 }
 .mm-titreFormations { 
     font-size: 5rem;
-    margin-right: 10%;
-    margin-bottom: 4rem;
+    margin-right: 2rem;
 }
-.formationCarousel {
-    margin-left: 10vh;
-    margin-right: 10vh;
+.boutonCarousel {
+    padding : 0 2rem 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.iconCarou { 
+    font-size: 3rem;
+    color: #14213D;
+}
+.precedent, .suivant { 
+    cursor: pointer;
+}
+.CarouselFormations { 
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.card { 
+    width: 30rem;
+    height: 28rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 1rem;
+    margin: 1rem;
 }
-.carousel-item {
-    min-height: 50vh;
-    min-width: 70vw;
-    border: 1px solid #fff;
-    border-radius:3rem;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left : 30vw;
-    padding : 6rem;
+.card:hover { 
+    border: 0.5rem solid #14213D;
 }
-.missions{
+.card-img-top {
+    max-width: 14vw;
+}
+/* Contact */
+#mm-contact {
+    min-height: 100vh;
+    background-color: #fca311;
+    scroll-margin-top: 5vh;
+    color:#fff;
+}
+.titreContact { 
+    font-size: 5rem;
+    padding-top : 2rem;
+    text-align: center;
+    text-shadow: .2rem .2rem #fff;
+}
+#zoneImgContact {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4rem;
+}
+.imgContact {
+    max-height: 40vw;
+}
+.lordicon {
+    width: 4rem;
+    height: 4rem;
+}
+#ReseauxContact, #methodContact, #formContact {
+    color: #fff;
+}
+#methodContact { 
+    margin-top: 1rem;
+}
+.titreSocialMediaContact{
     font-family: 'Comic Neue';
+    font-size: 1.7rem;
+    margin-top: 1rem;
 }
-.colormission{
-    font-family: 'Comic Neue';
-    font-size: 1.5rem;
+.socialMediaContact { 
+    margin: 0 20% 0 20%;
+    display: flex;
+    justify-content: space-between;
 }
-.titlemission{
-    font-weight: bolder;
-    font-size: 1.8rem;
+.methodContact { 
+    margin: 0 20% 0 20%;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
 }
-.mm-lamanu { 
-    background-color : #fff;
-    background-image: url(/assets/img/logo_La_Manu_formation.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left : 30vw;
+.iconCon{
+    width: 2rem;
+    height: 2rem;
 }
-.mm-ryla {
-    background-color : #fff;
-    background-image: url(/assets/img/rotary-international-vector-logo.png);
-    padding-left : 30vw;
+.iconContact { 
+    text-decoration: none;
+    padding: 1rem;
+    background-color: #fca311;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #14213D, -5px -5px 10px #fca311;
 }
-.mm-eucalyptus {
-    background-color : #fff;
-    background-image: url(/assets/img/logo-les-eucalyptus.jpg);
-    padding-left : 30vw;
+.iconContact:hover { 
+    animation: shadow 2.5s infinite linear;
+    background-color: #14213D;
+}
+.iconContact:focus{
+    box-shadow: inset 10px 10px 20px #a16608, inset 5px -5px 10px #fca311;
+}
+@keyframes shadow {
+    0% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 
+        inset 10px 10px 20px #a16608, inset 5px -5px 10px #fca311;
+    }
+}
+.contactForm { 
+    font-size: 1rem;
+    margin: 0 20% 0 20%;
+    color: #fff;
+}
+.form-control {
+    background-color: #fca311 !important;
+    border-bottom: 2px solid #14213D !important;
+    border-top : none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+.boutonValider {
+    margin-left: 2rem;
+    background-color: #14213D;
+    color: #fff;
+    border: none;
+}
+.boutonValider:hover {
+    background-color: #fca311;
+    color: #fff;
+    border: 2px solid #14213D;
 }
