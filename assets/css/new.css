@@ -6,14 +6,34 @@
 body { 
     font-family:'Filmotype Austin' ;
 }
+/* Top Button */
+#topButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 5rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem  #14213D;
+    color: #fca311;
+    opacity: 0.8;
+    z-index: 10;
+}
+
 /* Nav Bar */
 .mm-navbar {
     background-color: #fca311;
-    /* display: none !important; */
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+.mm-navbar.light {
+    background-color: #14213D;
 }
 .nav-link { 
     color: #14213D !important;
     font-size: 2rem;
+}
+.nav-link.light { 
+    color: #fff !important;
+    text-shadow: 0.1rem 0.1rem #fca311 !important;
 }
 .navbar-brand { 
     color: #14213D !important;
@@ -115,7 +135,7 @@ body {
     background-color: #14213D;
     color: #fff;
     scroll-margin-top: 10vh;
-    min-height: 90vh auto;
+    min-height: 90vh;
 }
 .mm-titreProfil {
     font-size: 4rem;
@@ -129,7 +149,7 @@ body {
 .imgProfil {
     -webkit-filter: drop-shadow(2rem 2rem #fca311);
     filter: drop-shadow(0.4rem 0.2rem #ffffff);
-    max-height: 70vh;
+    max-height: 80vh;
 }
 
 /* Section Formations */
@@ -161,7 +181,7 @@ body {
     display: flex;
     justify-content: center;
 }
-.card { 
+.cardForm { 
     width: 30rem;
     height: 28rem;
     display: flex;
@@ -169,13 +189,345 @@ body {
     justify-content: center;
     border-radius: 1rem;
     margin: 1rem;
+    padding: 1.5rem;
 }
-.card:hover { 
+.cardForm:hover { 
     border: 0.5rem solid #14213D;
 }
 .card-img-top {
-    max-width: 14vw;
+    margin-top: 1rem;
+    max-width: 12rem;
 }
+.titlemission {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.colormission {
+    color : #fca311;
+}
+
+/* Section Compétences */
+#competences { 
+    background-color: #fff;
+    color:#14213D;
+    scroll-margin-top: 5rem;
+    height: 90vh;
+}
+.titreCompetences {
+    font-size: 5rem;
+}
+.titreLogiciels { 
+    font-family: 'Comic Neue';
+    font-size : 1.5rem;
+}
+.compLogo {
+    max-width: 5rem;
+    max-height: 5rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+.compGraph {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.adobeXD, .corelDraw, .adobeAI, .adobePS, .adobeID, .adobeAE, .adobePR, .html, .css, .js, .bootstrap, .wordpress, .github, .trello {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+.cardBar { 
+    width: 18vh;
+    padding: 0.2rem;
+    border: none !important;
+    margin-top: 0.2rem;
+}
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    padding: 0.2rem;
+}
+.bar{
+    border: 0.1rem solid;
+    border-radius: 2rem;
+}
+.bar div{
+    width: 0;
+    height: 1rem;
+    border-radius: 10px;
+}
+/* XD */
+.bar.XD {
+    border-color: #FF61F6;
+}
+#XD-bar{
+    animation: quatrevingtdix-fill 2s forwards;
+    background-color: #FF61F6;
+}
+/* Corel Draw */
+.bar.CD {
+    border-color: #6E9F27;
+}
+#CD-bar{
+    animation: quatrevingtdix-fill 2s forwards;
+    background-color: #6E9F27;
+}
+/* AI */
+.bar.AI {
+    border-color: #F19000;
+}
+#AI-bar{
+    animation: soixantedix-fill 2s forwards;
+    background-color: #F19000;
+}
+/* PS */
+.bar.PS {
+    border-color: #2DAAFF;
+}
+#PS-bar{
+    animation: soixantedix-fill 2s forwards;
+    background-color: #2DAAFF;
+}
+/* ID */
+.bar.ID {
+    border-color: #FF3066;
+}
+#ID-bar{
+    animation: soixante-fill 2s forwards;
+    background-color: #FF3066;
+}
+/* AE */
+.bar.AE {
+    border-color: #9A9AFF;
+}
+#AE-bar{
+    animation: soixante-fill 2s forwards;
+    background-color: #9A9AFF;
+}
+/* PR */
+.bar.PR {
+    border-color: #9A9AFF;
+}
+#PR-bar{
+    animation: soixante-fill 2s forwards;
+    background-color: #9A9AFF;
+}
+/* HTML */
+.bar.HTML {
+    border-color: #E54C21;
+}
+#HTML-bar{
+    animation: cent-fill 2s forwards;
+    background-color: #E54C21;
+}
+/* CSS */
+.bar.CSS {
+    border-color: #264DE4;
+}
+#CSS-bar{
+    animation: quatrevingtdix-fill 2s forwards;
+    background-color: #264DE4;
+}
+/* JS */
+.bar.JS {
+    border-color: #F0DB4F;
+}
+#JS-bar{
+    animation: quatrevingt-fill 2s forwards;
+    background-color: #F0DB4F;
+}
+/* BS */
+.bar.BS {
+    border-color: #7B09F8;
+}
+#BS-bar{
+    animation: quatrevingtdix-fill 2s forwards;
+    background-color: #7B09F8;
+}
+/* WP */
+.bar.WP {
+    border-color: #21759B;
+}
+#WP-bar{
+    animation: quatrevingtdix-fill 2s forwards;
+    background-color: #21759B;
+}
+/* Github */
+.bar.github {
+    border-color: #14191E;
+}
+#github-bar{
+    animation: soixantedix-fill 2s forwards;
+    background-color: #14191E;
+}
+/* Trello */
+.bar.trello {
+    border-color: #007EC6;
+}
+#trello-bar{
+    animation: quatrevingtdix-fill 2s forwards;
+    background-color: #007EC6;
+}
+/* Pourcentage animation */
+@keyframes cent-fill{
+    100%{
+        width: 100%;
+    }
+}
+@keyframes quatrevingtdix-fill{
+    100%{
+        width: 90%;
+    }
+}
+@keyframes quatrevingt-fill{
+    100%{
+        width: 80%;
+    }
+}
+@keyframes soixantedix-fill{
+    100%{
+        width: 70%;
+    }
+}
+@keyframes soixante-fill{
+    100%{
+        width: 60%;
+    }
+}
+/* Animation Rainbow */
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+.rainbow1 {
+	position: relative;
+	z-index: 0;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+.rainbow1::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#14213D, #1f376b, #fff), linear-gradient(#fff, #fff), linear-gradient(#fff, #fca311), linear-gradient(#fff, #fff);
+    animation: rotate 6s linear infinite;
+}
+.rainbow1::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 6px;
+		top: 6px;
+		width: calc(100% - 12px);
+		height: calc(100% - 12px);
+		background: white;
+		border-radius: 5px;
+	}
+.rainbow2 {
+    position: relative;
+    z-index: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.rainbow2::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#fca311, #fff), linear-gradient(#fff, #fff), linear-gradient(#fff, #1f376b, #14213D), linear-gradient(#fff, #fff);
+    animation: rotate 6s linear infinite;
+}
+.rainbow2::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: white;
+    border-radius: 5px;
+}
+
+/* Experiences */
+#experiences {
+    min-height: 100vh;
+    background: #14213D;
+    scroll-margin-top: 4rem;
+    color:#ffffff;
+}
+.titreExperiences { 
+    font-size: 5rem;
+    padding-top : 2rem;
+}
+.experiencesCard {
+    margin-top: 2rem;
+}
+.title { 
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.box {
+    height: 60vh;
+    background-color: transparent;
+    border: none;
+    border-radius: 2rem;
+    perspective: 500px;
+}
+.box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+}
+.box:hover .box-inner {
+    transform: rotateY(-180deg);
+}
+.box-front, .box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.box-front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    padding : 1rem;
+    background-color: #fff;
+    color: #111111;
+}
+.box-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    background-color: #ffffff3d;
+    color: #fff;
+    transform: rotateY(-180deg);
+}
+
 /* Contact */
 #mm-contact {
     min-height: 100vh;
@@ -188,6 +540,7 @@ body {
     padding-top : 2rem;
     text-align: center;
     text-shadow: .2rem .2rem #fff;
+    text-shadow: 0.1rem 0.2rem #14213D;
 }
 #zoneImgContact {
     display: flex;
