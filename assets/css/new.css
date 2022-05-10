@@ -18,9 +18,9 @@ body {
 /* Top Button */
 #topButton {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 5rem;
+    bottom: 15px;
+    right: 15px;
+    font-size: 4rem;
     text-shadow: 0.2rem 0.2rem 0.2rem  #14213D;
     color: #fca311;
     opacity: 0.8;
