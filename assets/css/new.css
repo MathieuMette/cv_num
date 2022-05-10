@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Filmotype Austin;
+    src: url(/assets/fonts/Filmotype\ Austin.ttf);
+}
+@font-face {
+    font-family: ComicSansMS;
+    src: url(/assets/fonts/comici.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -56,7 +65,7 @@ body {
     scroll-margin-top: 10rem;
     background-color: #ffffff;
     padding: 1rem;
-    min-height: 100vh auto;
+    min-height: 100vh;
 }
 .mm-titreAccueil {
     color: #14213D;
@@ -66,7 +75,7 @@ body {
 .mm-posteAccueil { 
     color: #14213D;
     font-size: 3.5rem;
-    font-family: 'Comic Neue';
+    font-family: 'ComicSansMS';
 }
 .imgAccueil {
     top: 5em;
@@ -134,22 +143,24 @@ body {
 #profil {
     background-color: #14213D;
     color: #fff;
-    scroll-margin-top: 10vh;
-    min-height: 90vh;
+    scroll-margin-top: 8vh;
+    min-height: 92vh auto;
 }
 .mm-titreProfil {
     font-size: 4rem;
     margin-left: 5%;
+    height: 15vh;
 }
 .mm-textProfil {
-    font-family: 'Comic Neue';
-    font-size: 1.4rem;
+    height: 77vh;
+    font-family: 'ComicSansMS';
+    font-size: 1.2rem;
     padding: 6rem;
 }
 .imgProfil {
     -webkit-filter: drop-shadow(2rem 2rem #fca311);
     filter: drop-shadow(0.4rem 0.2rem #ffffff);
-    max-height: 80vh;
+    height: 70vh;
 }
 
 /* Section Formations */
@@ -157,10 +168,10 @@ body {
     background-color: #E5E5E5;
     color:#14213D;
     scroll-margin-top: 10vh;
-    min-height: 90vh;
+    min-height: 92vh;
 }
 .mm-titreFormations { 
-    font-size: 5rem;
+    font-size: 4rem;
     margin-right: 2rem;
 }
 .boutonCarousel {
@@ -170,20 +181,20 @@ body {
     justify-content: space-around;
 }
 .iconCarou { 
-    font-size: 3rem;
+    font-size: 2rem;
     color: #14213D;
 }
 .precedent, .suivant { 
     cursor: pointer;
 }
 .CarouselFormations { 
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     display: flex;
     justify-content: center;
 }
 .cardForm { 
     width: 30rem;
-    height: 28rem;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -192,11 +203,12 @@ body {
     padding: 1.5rem;
 }
 .cardForm:hover { 
-    border: 0.5rem solid #14213D;
+    border: 0.2rem solid #14213D;
 }
 .card-img-top {
     margin-top: 1rem;
-    max-width: 12rem;
+    max-height: 10vh;
+    width:auto;
 }
 .titlemission {
     font-weight: bolder;
@@ -210,21 +222,24 @@ body {
 #competences { 
     background-color: #fff;
     color:#14213D;
-    scroll-margin-top: 5rem;
+    scroll-margin-top: 10vh;
     height: 90vh;
 }
+#rowComp {
+    height: 70vh;
+}
 .titreCompetences {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 .titreLogiciels { 
-    font-family: 'Comic Neue';
-    font-size : 1.5rem;
+    font-family: 'ComicSansMS';
+    font-size : 1.3rem;
 }
 .compLogo {
-    max-width: 5rem;
-    max-height: 5rem;
-    margin-top: 1.5rem;
-    margin-left: 1.5rem;
+    max-width: 10vh;
+    max-height: 10vh;
+    margin-top: 1.2rem;
+    margin-left: 1.2rem;
 }
 .compGraph {
     display: flex;
@@ -233,9 +248,17 @@ body {
     padding: 1rem;
 }
 .adobeXD, .corelDraw, .adobeAI, .adobePS, .adobeID, .adobeAE, .adobePR, .html, .css, .js, .bootstrap, .wordpress, .github, .trello {
+    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+}
+.compLogo {
+    margin: 0;
+}
+.btn {
     display: flex;
-    flex-direction: column;
-    margin-left: 2rem;
+    justify-content:center;
+    align-items:center;
 }
 .cardBar { 
     width: 18vh;
@@ -247,6 +270,7 @@ body {
     width: 100%;
     display: flex;  
     justify-content: space-between;
+    font-size: 0.5rem;
     padding: 0.2rem;
 }
 .bar{
@@ -469,15 +493,16 @@ body {
 #experiences {
     min-height: 100vh;
     background: #14213D;
-    scroll-margin-top: 4rem;
+    scroll-margin-top: 8vh;
     color:#ffffff;
+    height: 90vh;
 }
 .titreExperiences { 
     font-size: 5rem;
-    padding-top : 2rem;
+    padding-top : 1.5rem;
 }
 .experiencesCard {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .title { 
     font-size: 2rem;
@@ -530,13 +555,13 @@ body {
 
 /* Contact */
 #mm-contact {
-    min-height: 100vh;
+    height: 95vh;
     background-color: #fca311;
     scroll-margin-top: 5vh;
     color:#fff;
 }
 .titreContact { 
-    font-size: 5rem;
+    font-size: 4rem;
     padding-top : 2rem;
     text-align: center;
     text-shadow: .2rem .2rem #fff;
@@ -562,7 +587,7 @@ body {
     margin-top: 1rem;
 }
 .titreSocialMediaContact{
-    font-family: 'Comic Neue';
+    font-family: 'ComicSansMS';
     font-size: 1.7rem;
     margin-top: 1rem;
 }
@@ -626,4 +651,306 @@ body {
     background-color: #fca311;
     color: #fff;
     border: 2px solid #14213D;
+}
+
+@media screen and (max-width: 992px) {
+    /* Button top */
+    #topButton {
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        font-size: 3rem;
+    }
+    /* Acceuil */
+    .imgAccueil {
+        max-height:50vh;
+    }
+    .mm-posteAccueil { 
+        margin-top: 2rem;
+    }
+    .icon { 
+        font-size: 100px;
+        margin-top: 2rem;
+    }
+    .button-aboutMe {
+        margin-top: 2rem;
+        font-size: 2rem;
+        outline: 2px solid #fca311;
+        border-radius: 4rem;
+        padding: 1rem 2rem;
+    }
+    /* Profil */
+    #profil {
+        scroll-margin-top: 5vh;
+        min-height: 95vh auto;
+    }
+    .mm-titreProfil {
+        font-size: 3rem;
+        margin-left: 5%;
+        height: 10vh;
+    }
+    .mm-textProfil {
+        height: 40vh;
+        padding: 8rem;
+    }
+    .imgProfil {
+        height: 40vh;
+        margin-bottom: 3vh;
+    }
+    /* Formation */
+    #formations {
+        scroll-margin-top: 6vh;
+        min-height: 94vh;
+    }
+    .mm-titreFormations { 
+        font-size: 3rem;
+        margin-right: 2rem;
+        margin-top : 1rem;
+    }
+    .iconCarou { 
+        font-size: 4rem;
+    }
+    .CarouselFormations { 
+        margin-top: 0;
+    }
+    .cardForm { 
+        width: 30rem;
+        height: 35vh;
+    }
+    /* Competences */
+    #competences { 
+        scroll-margin-top: 6vh;
+        height: 94vh;
+    }
+    .titreCompetences {
+        font-size: 3rem;
+    }
+    .titreLogiciels { 
+        font-size : 1.5rem;
+        margin-top:0.5rem;
+    }
+    .compLogo {
+        max-width: 8vh;
+        max-height: 8vh;
+        margin-top: 1rem;
+    }
+    .adobeXD, .corelDraw, .adobeAI, .adobePS, .adobeID, .adobeAE, .adobePR, .html, .css, .js, .bootstrap, .wordpress, .github, .trello {
+        margin-left: 3rem;
+    }
+    /* Experiences */
+    #experiences {
+        background: #14213D;
+        scroll-margin-top: 5vh;
+        color:#ffffff;
+        height: 95vh;
+    }
+    .titreExperiences { 
+        font-size: 3rem;
+    }
+    .experiencesCard {
+        margin-top: 0.5rem;
+    }
+    .box {
+        height: 40vh;
+        background-color: transparent;
+        border: none;
+        border-radius: 2rem;
+        perspective: 500px;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Button top */
+    #topButton {
+        font-size: 2.5rem;
+    }
+    /* Acceuil */
+    .imgAccueil {
+        max-height:40vh;
+        margin-top: 10vh;
+    }
+    .mm-posteAccueil { 
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .icon { 
+        font-size: 40px;
+        margin-top: 1rem;
+    }
+    .button-aboutMe {
+        margin-top: 2rem;
+        font-size: 1rem;
+        border-radius: 4rem;
+        padding: 1rem 2rem;
+    }
+    /* Profil */
+    #profil {
+        scroll-margin-top: 8vh;
+        height: 92vh;
+    }
+    .mm-titreProfil {
+        font-size: 2rem;
+        height: auto;
+    }
+    .mm-textProfil {
+        height: 80vh;
+        padding: 2rem;
+        font-size: 0.9rem;
+    }
+    .imgProfil {
+        display: none;
+    }
+    /* Formation */
+    #formations {
+        scroll-margin-top: 10vh;
+        min-height: 90vh;
+    }
+    .mm-titreFormations { 
+        font-size: 2rem;
+        margin-right: 2rem;
+        margin-top : 1rem;
+    }
+    .iconCarou { 
+        font-size: 2rem;
+    }
+    .cardForm { 
+        width: 90vw;
+        height: 33vh;
+    }
+    .card-img-top {
+        margin-top: 1rem;
+        max-height: 6vh;
+        width:auto;
+    }
+    .titlemission {
+        font-size: 1rem;
+    }
+    .colormission {
+        font-size: 0.7rem;
+    }
+    .yearFormation {
+        font-size: 0.6rem;
+    }
+    .missions {
+        font-size: 0.6rem;
+    }
+    /* Competences */
+    #competences { 
+        scroll-margin-top: 10vh;
+        height: 140vh;
+    }
+    .titreCompetences {
+        font-size: 2rem;
+    }
+    .titreLogiciels { 
+        font-size : 1.1rem;
+    }
+    .compLogo {
+        max-width: 8vh;
+        max-height: 8vh;
+        margin-top: 1rem;
+    }
+    .adobeXD, .corelDraw, .adobeAI, .adobePS, .adobeID, .adobeAE, .adobePR, .html, .css, .js, .bootstrap, .wordpress, .github, .trello {
+        margin-left: 3rem;
+    }
+    /* Experiences */
+    #experiences {
+        scroll-margin-top: 8vh;
+        height: 190vh;
+    }
+    .titreExperiences { 
+        font-size: 2rem;
+    }
+    .experiencesCard {
+        margin-top: 0.5rem;
+    }
+    .box {
+        height: 40vh;
+        background-color: transparent;
+        border: none;
+        border-radius: 2rem;
+        perspective: 500px;
+        margin-top: 1rem;
+    }
+    .title {
+        font-size: 1.8rem;
+    }
+    .text_container>p {
+        font: 0.5rem;
+        margin-bottom: 0.1rem;
+    }
+    .box-front>img {
+        max-height: 30vh;
+    }
+    /* Contact */
+    #mm-contact {
+        height: 90vh;
+        scroll-margin-top: 10vh;
+    }
+    .titreContact { 
+        font-size: 3rem;
+        padding-top : 0;
+    }
+    #zoneImgContact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+    }
+    .imgContact {
+        max-height: 20vh;
+    }
+    .lordicon {
+        width: 3rem;
+        height: 3rem;
+    }
+    #methodContact { 
+        margin-top: 1rem;
+    }
+    .titreSocialMediaContact{
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+    .socialMediaContact { 
+        margin: 0 20% 0 20%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .methodContact { 
+        margin: 0 20% 0 20%;
+        display: flex;
+        justify-content: space-around;
+        color: #fff;
+    }
+    .iconCon{
+        width: 2rem;
+        height: 2rem;
+    }
+    .iconContact { 
+        padding: 0.4rem;
+    }
+    .contactForm { 
+        font-size: 1rem;
+        margin: 0 5% 0 5%;
+        color: #fff;
+    }
+    .form-control {
+        background-color: #fca311 !important;
+        border-bottom: 2px solid #14213D !important;
+        border-top : none !important;
+        border-left: none !important;
+        border-right: none !important;
+    }
+    .boutonValider {
+        margin-left: 2rem;
+        background-color: #14213D;
+        color: #fff;
+        border: none;
+    }
+    .boutonValider:hover {
+        background-color: #fca311;
+        color: #fff;
+        border: 2px solid #14213D;
+    }
 }

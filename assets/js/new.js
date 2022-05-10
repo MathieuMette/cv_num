@@ -19,9 +19,9 @@ var navBar = document.querySelector('#mm-navBar');
 var navLinks = document.querySelectorAll('.nav-link');
 var navItems = document.querySelectorAll('.nav-item');
 window.addEventListener('scroll', function() {
-    if (window.scrollY >= '630'){
+    if (window.scrollY >= '550'){
         navBar.style.opacity = 1;
-    } else if (window.scrollY < '630') {
+    } else if (window.scrollY < '550') {
         navBar.style.opacity = 0;
     } 
 })
