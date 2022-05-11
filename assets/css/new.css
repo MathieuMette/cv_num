@@ -1,10 +1,10 @@
 @font-face {
-    font-family: Filmotype Austin;
-    src: url(/assets/fonts/Filmotype\ Austin.ttf);
+    font-family: "Filmotype Austin";
+    src: url("/assets/fonts/Filmotype_Austin.ttf");
 }
 @font-face {
-    font-family: ComicSansMS;
-    src: url(/assets/fonts/comici.ttf);
+    font-family: "ComicSansMS";
+    src: url("/assets/fonts/comici.ttf");
 }
 
 * {
