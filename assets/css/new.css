@@ -3,7 +3,6 @@
 @import url(//db.onlinewebfonts.com/c/2dd509271764ff079832bac8db2c5ac1?family=Filmotype+Austin);
 @font-face {font-family: "Filmotype Austin"; src: url("//db.onlinewebfonts.com/t/2dd509271764ff079832bac8db2c5ac1.eot"); src: url("//db.onlinewebfonts.com/t/2dd509271764ff079832bac8db2c5ac1.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2dd509271764ff079832bac8db2c5ac1.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2dd509271764ff079832bac8db2c5ac1.woff") format("woff"), url("//db.onlinewebfonts.com/t/2dd509271764ff079832bac8db2c5ac1.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2dd509271764ff079832bac8db2c5ac1.svg#Filmotype Austin") format("svg"); }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +11,59 @@
 body { 
     font-family:'Filmotype Austin' ;
 }
+
+/* Modal */
+.modalMM {
+    background-color: #fca311;
+    color: #fff;
+    border-radius: 3rem;
+    text-align: center;
+    position: absolute;
+    z-index: 5;
+    padding: 1rem;
+    left : 30%;
+    width: 40%;
+    height:40vh auto;
+}
+#modalEnter {
+    top : 35vh;
+}
+#buttonModalEnter {
+    background-color: #ffffff;
+    color: #14213D;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+#modalEnter.invisible {
+    display: none;
+}
+
+.modal-dialog {
+    margin-top : 20vh;
+}
+.modal-content { 
+    background-color: #14213D !important;
+    color: #fff !important;
+    border-radius: 1rem !important;
+    text-align: center !important;
+    font-size: 1.2rem;
+}
+.modal-header, .modal-body, .modal-footer {
+    border: none;
+    text-align: center !important;
+}
+.modal-footer { 
+    justify-content:center !important;
+}
+#buttonModalContact {
+    background-color: #ffffff;
+    color: #14213D;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
 /* Top Button */
 #topButton {
     position: fixed;

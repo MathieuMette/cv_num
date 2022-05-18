@@ -20,6 +20,19 @@
         <title>Mathieu METTE - Découvrez toutes les informations sur Mathieu Mette</title>
     </head>
     <body>
+        <!-- Modal d'entrée-->
+        <div id="modalEnter" class="modalMM">
+            <p>
+                Salut toi,
+            </p>
+            <p>
+                Il s'agit de mon premier site uniquement en codage HTML / CSS / JS
+            </p>
+            <p>alors soit indulgent</p>
+            <p>😋</p>
+            <button id="buttonModalEnter">C'est noté</button>
+        </div>
+    
         <!-- Button retour en haut -->
         <div class="buttonTop" >
             <a href="#" class="top" id="topButton">
@@ -672,10 +685,27 @@
                             <div class="form-floating mb-3 contactForm d-flex">
                                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                                 <label for="floatingInput">Ton adresse Email </label>
-                                <input class="btn boutonValider" type="submit" value="Valider">
+                                <input id="buttonEmail" type="button" data-bs-toggle="modal" data-bs-target="#modalContact" class="btn boutonValider" type="submit" value="Valider">
                             </div>                        
                         </div>
                         <div class="methodContact">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Contact -->
+            <div class="modal fade" id="modalContact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Je n'ai pas encore de base de données 😋</p>
+                            <p>Alors n'hésites pas à me contacter par les autres moyens 😎</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn" id="buttonModalContact" data-bs-dismiss="modal">Ok !</button>
                         </div>
                     </div>
                 </div>
