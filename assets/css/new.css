@@ -1,11 +1,8 @@
-@font-face {
-    font-family: "Filmotype";
-    src: url("/assets/fonts/Filmotype_Austin.otf");
-}
-@font-face {
-    font-family: "Comici";
-    src: url("/assets/fonts/ComicNeue.otf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+@import url(//db.onlinewebfonts.com/c/2dd509271764ff079832bac8db2c5ac1?family=Filmotype+Austin);
+@font-face {font-family: "Filmotype Austin"; src: url("//db.onlinewebfonts.com/t/2dd509271764ff079832bac8db2c5ac1.eot"); src: url("//db.onlinewebfonts.com/t/2dd509271764ff079832bac8db2c5ac1.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2dd509271764ff079832bac8db2c5ac1.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2dd509271764ff079832bac8db2c5ac1.woff") format("woff"), url("//db.onlinewebfonts.com/t/2dd509271764ff079832bac8db2c5ac1.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2dd509271764ff079832bac8db2c5ac1.svg#Filmotype Austin") format("svg"); }
+
 
 * {
     margin: 0;
@@ -13,7 +10,7 @@
     scroll-behavior: smooth;
 }
 body { 
-    font-family:'Filmotype' ;
+    font-family:'Filmotype Austin' ;
 }
 /* Top Button */
 #topButton {
@@ -75,7 +72,7 @@ body {
 .mm-posteAccueil { 
     color: #14213D;
     font-size: 3.5rem;
-    font-family: 'Comici';
+    font-family: 'Comic Neue';
 }
 .imgAccueil {
     top: 5em;
@@ -153,7 +150,7 @@ body {
 }
 .mm-textProfil {
     height: 77vh;
-    font-family: 'Comici';
+    font-family: 'Comic Neue';
     font-size: 1.2rem;
     padding: 6rem;
 }
@@ -232,7 +229,7 @@ body {
     font-size: 4rem;
 }
 .titreLogiciels { 
-    font-family: 'Comici';
+    font-family: 'Comic Neue';
     font-size : 1.3rem;
 }
 .compLogo {
@@ -587,7 +584,7 @@ body {
     margin-top: 1rem;
 }
 .titreSocialMediaContact{
-    font-family: 'Comici';
+    font-family: 'Comic Neue';
     font-size: 1.7rem;
     margin-top: 1rem;
 }
