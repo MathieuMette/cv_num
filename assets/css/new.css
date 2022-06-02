@@ -13,7 +13,7 @@ body {
 }
 
 /* Modal */
-.modalMM {
+/* .modalMM {
     background-color: #fca311;
     color: #fff;
     border-radius: 3rem;
@@ -22,7 +22,7 @@ body {
     z-index: 5;
     padding: 1rem;
     left : 30%;
-    width: 40%;
+    width: 60%;
     height:40vh auto;
 }
 #modalEnter {
@@ -40,7 +40,8 @@ body {
 }
 
 .modal-dialog {
-    margin-top : 20vh;
+    margin-top : 5vh;
+    height: auto;
 }
 .modal-content { 
     background-color: #14213D !important;
@@ -48,14 +49,19 @@ body {
     border-radius: 1rem !important;
     text-align: center !important;
     font-size: 1.2rem;
-}
-.modal-header, .modal-body, .modal-footer {
+    border: none; 
+}*/
+/* .modal-header, .modal-body, .modal-footer {
     border: none;
     text-align: center !important;
 }
+.modal-body {
+    height: 80vh !important;
+}
 .modal-footer { 
     justify-content:center !important;
-}
+    height:10vh; 
+}*/
 #buttonModalContact {
     background-color: #ffffff;
     color: #14213D;
@@ -284,22 +290,35 @@ body {
     font-family: 'Comic Neue';
     font-size : 1.3rem;
 }
-.compLogo {
-    max-width: 10vh;
-    max-height: 10vh;
-    margin-top: 1.2rem;
-    margin-left: 1.2rem;
-}
-.compGraph {
+.zoneLogo { 
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 1rem;
-}
-.adobeXD, .corelDraw, .adobeAI, .adobePS, .adobeID, .adobeAE, .adobePR, .html, .css, .js, .bootstrap, .wordpress, .github, .trello {
-    margin-left: 0;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.compLogo {
+    max-width: 7vh;
+    max-height: 7vh;
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+}
+.tableau {
+    display: flex;
+}
+.tableau tr {
+    display: flex;
+    justify-content: space-around;
+}
+.compGraph {
+    padding: 0.2rem;
+}
+.adobeXD, .corelDraw, .adobeAI, .adobePS, .adobeID, .adobeAE, .adobePR, .html, .css, .js, .bootstrap, .wordpress, .github, .trello, .woocommerce {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
 }
 .compLogo {
     margin: 0;
@@ -325,10 +344,11 @@ body {
 .bar{
     border: 0.1rem solid;
     border-radius: 2rem;
+    height: 0.8rem;
 }
 .bar div{
     width: 0;
-    height: 1rem;
+    height: 0.6rem;
     border-radius: 10px;
 }
 /* XD */
@@ -426,6 +446,14 @@ body {
 #WP-bar{
     animation: quatrevingtdix-fill 2s forwards;
     background-color: #21759B;
+}
+/* Woo */
+.bar.WO {
+    border-color: #9B5C8F;
+}
+#WO-bar{
+    animation: quatrevingt-fill 2s forwards;
+    background-color: #9B5C8F;
 }
 /* Github */
 .bar.github {
@@ -779,8 +807,8 @@ body {
         margin-top:0.5rem;
     }
     .compLogo {
-        max-width: 8vh;
-        max-height: 8vh;
+        max-width: 6vh;
+        max-height: 6vh;
         margin-top: 1rem;
     }
     .adobeXD, .corelDraw, .adobeAI, .adobePS, .adobeID, .adobeAE, .adobePR, .html, .css, .js, .bootstrap, .wordpress, .github, .trello {

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+@import url(//db.onlinewebfonts.com/c/2dd509271764ff079832bac8db2c5ac1?family=Filmotype+Austin);
+@font-face {font-family: "Filmotype Austin"; src: url("//db.onlinewebfonts.com/t/2dd509271764ff079832bac8db2c5ac1.eot"); src: url("//db.onlinewebfonts.com/t/2dd509271764ff079832bac8db2c5ac1.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2dd509271764ff079832bac8db2c5ac1.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2dd509271764ff079832bac8db2c5ac1.woff") format("woff"), url("//db.onlinewebfonts.com/t/2dd509271764ff079832bac8db2c5ac1.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2dd509271764ff079832bac8db2c5ac1.svg#Filmotype Austin") format("svg"); }
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body { 
+    font-family:'Filmotype Austin' ;
+}
+/* Top Button */
+#topButton {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    font-size: 4rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem  #fca311;
+    color: #14143D;
+    opacity: 0.8;
+    z-index: 10;
+}
+
+/* Nav Bar */
+.mm-navbar {
+    background-color: #14143D;
+    transition: all 0.5s linear;
+}
+.mm-navbar.light {
+    background-color: #fca311;
+}
+.nav-link { 
+    color: #fca311 !important;
+    font-size: 2rem;
+}
+.nav-link.light { 
+    color: #fff !important;
+    text-shadow: 0.1rem 0.1rem #14143D !important;
+}
+.navbar-brand { 
+    color: #fca311 !important;
+    text-shadow: 0.1rem 0.1rem #fff !important;
+    font-size: 2rem;
+}
+.navbar-toggler { 
+    color: #14143D !important;
+    border-color: #14143D !important;
+}
+.nav-item {
+    display: flex;
+    align-items: center !important;
+}
+.mm-navAutres { 
+    width: 100%;
+}
+
+/* Zone 1 */
+#zone1 {
+    background-color: #fca311;
+    padding: 1rem;
+    min-height: 100vh;
+}
+.title { 
+    margin-top: 15vh;
+    text-align: center;
+    color: #14143D !important;
+}
+h1 {
+    font-size: 5rem;
+}
+
+/* Card test */
+.carte {
+    display: flex;
+}
+.card {
+    position: relative;
+    display: flex;
+    min-height: 30vh;
+    min-width: 20vw;
+    margin: 0.5rem;
+    padding: 0.2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    text-decoration: none;
+    color: #fca311;
+    box-shadow: #14143d 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+.card:hover { 
+    color: #14143D;
+    box-shadow: #14143d 0.4rem 0.4rem 0.4rem 0.4rem;
+}
+.card::before, .card::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.card::before {
+    border-style: solid;
+    border-width:0 0 0.1rem 0.1rem;
+    border-color: transparent transparent #fff transparent;
+    transition: border .25s;
+}
+.card::after {
+    content: "Voir";
+    bottom: 10px;
+    right: 10px;
+    color: #151515;
+    font-size:21px;
+    opacity: 0;
+}
+.card:hover::before {
+    border-width: 0 0 5rem 5rem;
+}
+.card:hover::after {
+    opacity: 1;
+    transition: opacity .5s;
+}
+.card_title {
+    margin: auto;
+    font-size: 36px;
+}
+.card#shifumi {
+    background-color: #14143D;
+    background-image: url(../img/shifumi.png);
+    background-size: cover;
+}
+.card#donpariggi {
+    background-image: url(../img/donpariggi.png);
+    background-size: cover;
+}
+
+@media screen and (max-width: 992px) {
+    /* Button top */
+    #topButton {
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        font-size: 3rem;
+    }
+}

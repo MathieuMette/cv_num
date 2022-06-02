@@ -2,14 +2,14 @@ var previousButton = document.querySelector('#previousButton');
 var nextButton = document.querySelector('#nextButton');
 var manuRyla = document.querySelector('#manuRyla');
 var btsBac = document.querySelector('#btsBac');
-var modalEnter = document.querySelector('#modalEnter');
-var buttonModalEnter = document.querySelector('#buttonModalEnter');
+// var modalEnter = document.querySelector('#modalEnter');
+// var buttonModalEnter = document.querySelector('#buttonModalEnter');
 var buttonEmail = document.querySelector('#buttonEmail');
 var modalContact = document.querySelector('#modalContact');
 
-buttonModalEnter.addEventListener('click', function(){
-    modalEnter.classList.toggle('invisible');
-})
+// buttonModalEnter.addEventListener('click', function(){
+//     modalEnter.classList.toggle('invisible');
+// })
 
 // buttonEmail.addEventListener('click', function(){
 //     modalContact.classList.toggle('visible');
